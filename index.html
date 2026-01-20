@@ -97,53 +97,93 @@
             title: 'Breads & Rotis',
             accent: 'gold',
             items: [
-              { name: 'Roti', description: 'Varieties: Wheat, Ragi, Jovar, Rice Flour, All-Purpose Flour, Bajri.' },
-              { name: 'Thepla', description: 'Varieties: Spinach, Methi, Kothmi, Onion.', badge: 'House Special' },
-              { name: 'Paratha', description: 'Varieties: Simple, Lacha, Aloo, Paneer.', isPopular: true },
-              { name: 'Traditional Sides', description: 'Puri, Bhakhri, Extra Pav.' }
+              { name: 'Classic Roti', description: 'Wheat or All-Purpose Flour.', price: '$1 / pc (Min. Order 2)' },
+              { name: 'Specialty Roti', description: 'Ragi, Jovar, Rice Flour, Bajri.', price: '$5 / 3 pcs (Min. Order 3)' },
+              
+              // Thepla Varieties
+              { name: 'Masala Thepla', description: 'Classic spiced flatbread.', price: '3 for $10', badge: 'House Special' },
+              { name: 'Spinach Thepla', description: 'Infused with fresh spinach.', price: '3 for $11' },
+              { name: 'Methi Thepla', description: 'Fenugreek leaves (Methi).', price: '3 for $12' },
+              { name: 'Cilantro Thepla', description: 'Fresh coriander (Kothmi).', price: '3 for $11' },
+              { name: 'Onion Thepla', description: 'Spiced onion mix.', price: '3 for $11' },
+
+              // Paratha Varieties
+              { name: 'Simple Paratha', description: 'Traditional plain paratha.', price: '3 for $10' },
+              { name: 'Lachha Paratha', description: 'Flaky layered flatbread.', price: '3 for $12' },
+              { name: 'Aloo Paratha', description: 'Stuffed with spiced potato.', price: '3 for $12', isPopular: true },
+              { name: 'Paneer Paratha', description: 'Stuffed with cottage cheese.', price: '3 for $14' },
+
+              // Sides
+              { name: 'Puri', description: 'Deep-fried puffed bread.', price: '4 for $2 (Small) / 2 for $2 (Big)' },
+              { name: 'Bhakhri', description: 'Crispy whole wheat bread.', price: '3 for $2' },
+              { name: 'Extra Pav', description: 'Buttered bread roll.', price: '$1 / pc' }
             ]
           },
           {
             id: 'sabji',
             number: '02',
             title: 'Sabji (Curries)',
+            subtitle: 'All Sabji comes in 16oz container',
             accent: 'blue',
             items: [
-              { name: 'Kathiyawadi & Gujarati Specials', description: 'Sev Tomato, Dungli Bataka (Onion Potato), Papdi, Sukhi Bhaji (Dry Potato).' },
-              { name: 'North Indian Classics', description: 'Aloo Matar, Chole Masala, Palak Tofu / Palak Paneer, Cheese Butter Masala.', isPopular: true },
-              { name: 'Vegetable Staples', description: 'Mix Vegetable, Gavar, Tindora, Karela.' },
-              { name: 'Fusion Sabji', description: 'Carrot Corn Zucchini (sprinkled with coconut flakes).', badge: 'Signature' }
+              { name: 'Sev Tomato', description: 'Tangy tomato curry topped with crispy noodles.', price: '$12' },
+              { name: 'Dungli Bataka', description: 'Onion Potato curry.', price: '$12' },
+              { name: 'Rasa Vada Bataka', description: 'Potato in Gujarati Gravy.', price: '$12', badge: 'New' },
+              { name: 'Sukhi Bhaji', description: 'Dry Spiced Potato.', price: '$12' },
+              { name: 'Aloo Matar', description: 'Potato and peas curry.', price: '$12' },
+              { name: 'Papdi', description: 'Flat bean curry.', price: '$15' },
+              { name: 'Chole Masala', description: 'Spiced chickpeas.', price: '$15' },
+              { name: 'Mix Veg', description: 'Seasonal mixed vegetables.', price: '$15' },
+              { name: 'Gavar', description: 'Cluster beans.', price: '$15' },
+              { name: 'Tindora', description: 'Ivy gourd.', price: '$15' },
+              { name: 'Palak Paneer', description: 'Spinach and cottage cheese.', price: '$16', isPopular: true },
+              { name: 'Cheese Butter Masala', description: 'Rich creamy gravy with cheese.', price: '$16' },
+              { name: 'Palak Tofu', description: 'Vegan spinach curry.', price: '$17' },
+              { name: 'Karela', description: 'Bitter Gourd preparation.', price: '$17' },
+              { name: 'Carrot Corn Zucchini', description: 'Fusion vegetable medley.', price: '$13' }
             ]
           },
           {
             id: 'dal',
             number: '03',
             title: 'Dal (Lentils)',
+            subtitle: 'Served in 16oz container',
             accent: 'gold',
             items: [
-              { name: 'Toor Dal', description: 'Gujarati Style.' },
-              { name: 'Mix Dal', description: 'Toor, Urad, Masoor, Chana, Moong.', isPopular: true },
-              { name: 'Urad Dal', description: 'Creamy split black gram.' }
+              { name: 'Toor Dal', description: 'Gujarati Style.', price: '$10' },
+              { name: 'Urad Dal', description: 'Creamy split black gram.', price: '$10' },
+              { name: 'Mix Dal', description: 'Toor, Urad, Masoor, Chana, Moong.', price: '$12', isPopular: true }
             ]
           },
           {
             id: 'rice',
             number: '04',
             title: 'Rice & Khichdi',
+            subtitle: 'Served in 16oz container',
             accent: 'blue',
             items: [
-              { name: 'Khichdi', description: 'Varieties: Plain, Vaghareli/Tadka, Vegetable, Shahi with Cashews.', isPopular: true },
-              { name: 'Pulav', description: 'Served with a side of plain yogurt.' }
+              { name: 'Plain Rice', description: 'Steamed basmati rice.', price: '$8' },
+              { name: 'Jeera Rice', description: 'Cumin flavored rice.', price: '$8' },
+              { name: 'Plain Khichdi', description: 'Comforting rice and lentil porridge.', price: '$8' },
+              { name: 'Tadka Khichdi', description: 'Tempered with spices.', price: '$8' },
+              { name: 'Vegetable Khichdi', description: 'Mixed with garden vegetables.', price: '$9' },
+              { name: 'Shahi Khichdi', description: 'Royal preparation.', price: '$12' },
+              { name: 'Pulav', description: 'Spiced vegetable rice.', price: '$13' }
             ]
           },
           {
             id: 'street-food',
             number: '05',
             title: 'Street Food & Burgers',
+            subtitle: 'Replace burger cheese with Vegan slice (+$2)',
             accent: 'gold',
             items: [
-              { name: 'Bombay Classics', description: 'Bhaji Pav, Only Bhaji, Dabeli, Samosa.', isPopular: true },
-              { name: 'Burgers', description: 'Patty Options: Aloo Patty, Black Bean Patty. Vegan cheese available.', badge: 'Fusion' }
+              { name: 'Samosa', description: 'Crispy pastry with savory filling.', price: '$5' },
+              { name: 'Dabeli', description: 'Spiced potato slider with pomegranate.', price: '$6' },
+              { name: 'Aloo Burger', description: 'Spiced potato patty burger.', price: '$10' },
+              { name: 'Blackbean Burger', description: 'Hearty bean patty.', price: '$10' },
+              { name: 'Only Bhaji', description: 'Spiced vegetable mash (No bread).', price: '$14' },
+              { name: 'Bhaji Pav', description: 'Comes with 2 counts of Pav.', price: '$16', isPopular: true }
             ]
           },
           {
@@ -152,76 +192,118 @@
             title: 'Indo-Chinese',
             accent: 'blue',
             items: [
-              { name: 'Manchurian', description: 'Available Dry or with Gravy.' },
-              { name: 'Chilli Paneer', description: 'Spicy cottage cheese cubes.', badge: 'Spicy' },
-              { name: 'Wok Tossed', description: 'Hakka Noodles & Fried Rice.' }
+              { name: 'Fried Rice', description: 'Wok tossed veggies and rice.', price: '$10' },
+              { name: 'Dry Manchurian', description: '8 Balls.', price: '$12' },
+              { name: 'Gravy Manchurian', description: '8 Balls in sauce.', price: '$15' },
+              { name: 'Hakka Noodles', description: 'Stir fried noodles.', price: '$15' },
+              { name: 'Chilli Paneer', description: 'Spicy cottage cheese cubes.', price: '$20', badge: 'Spicy' }
             ]
           },
           {
             id: 'south-indian',
             number: '07',
             title: 'South Indian',
+            subtitle: 'Dosa comes with Chutney & 2oz Sambar. Add Amul Cheese (+$3).',
             accent: 'gold',
             items: [
-              { name: 'Idli', description: 'Plain or Tadka (Fried).' },
-              { name: 'Dosa', description: 'Plain, Mysore Masala, Masala. Served with Sambar & Coconut Chutney.', isPopular: true }
+              { name: 'Plain Idli', description: '3 pieces. Comes with Chutnies.', price: '$10' },
+              { name: 'Sambhar Dipped Idli', description: '2 pieces.', price: '$10' },
+              { name: 'Sambar', description: '16oz container.', price: '$10' },
+              { name: 'Plain Dosa', description: 'Crispy rice crepe.', price: '$9' },
+              { name: 'Masala Dosa', description: 'Stuffed with spiced potato.', price: '$10', isPopular: true },
+              { name: 'Mysore Masala', description: 'With spicy chutney spread.', price: '$10' },
+              { name: 'Onion Masala', description: 'Stuffed with spiced onions.', price: '$10' }
             ]
           },
           {
             id: 'farsan',
             number: '08',
             title: 'Savory Snacks (Farsan)',
+            subtitle: 'Serves One Person',
             accent: 'blue',
             items: [
-              { name: 'Chaat Specials', description: 'Pani Poori, Bhel Puri, Basket Chaat.' },
-              { name: 'Steamed Snacks', description: 'Dhokla, Khaman, Muthiya, Khandvi.', badge: 'Healthy' },
-              { name: 'Crispy Favourites', description: 'Kachori (Lilva, Regular), Gota (Methi), Bhajiya (Potato, Onion, Sweet Potato).' },
-              { name: 'Fusion Munchies', description: 'Crispy Tofu (Masoor Dal batter), French Fries.' }
+              { name: 'Khasta Kachori', description: 'Crispy flaky pastry.', price: '$5' },
+              { name: 'French Fries', description: 'Classic salted fries.', price: '$8' },
+              { name: 'Pani Puri', description: '7 pieces.', price: '$8' },
+              { name: 'Bhel Puri', description: 'Puffed rice mix.', price: '$9' },
+              { name: 'Basket Chat', description: 'Edible basket tart.', price: '$9' },
+              { name: 'Lilva Kachori', description: '8 pieces.', price: '$15' },
+              { name: 'Dhokla', description: 'Steamed savory cake.', price: '$15' },
+              { name: 'Khaman', description: 'Fluffy gram flour cake.', price: '$15' },
+              { name: 'Muthiya', description: 'Steamed dumplings.', price: '$15' },
+              { name: 'Khandvi', description: 'Gram flour rolls.', price: '$15' },
+              { name: 'Gota', description: 'Savory balls.', price: '$15' },
+              { name: 'Bhajiya', description: 'Fritters.', price: '$15' },
+              { name: 'Onion Bhajiya', description: 'Onion fritters.', price: '$15' },
+              { name: 'Sweet Potato Bhajiya', description: 'Sweet potato fritters.', price: '$15' },
+              { name: 'Crispy Tofu', description: '16oz.', price: '$16' }
             ]
           },
           {
             id: 'artisan',
             number: '09',
             title: 'Artisan Mains',
+            subtitle: 'Vegan Plant Based Cheese available (+$3)',
             accent: 'gold',
             items: [
-              { name: 'Signature Heavy Loaded Pizza', description: 'Jalapeño, Olive, Baby Corn, Corn, Pineapple, Onion, Capsicum, Tomato, Spinach. Regular or Vegan Cheese.', badge: 'Chef Special' },
-              { name: 'Cheese Pizza', description: 'Classic cheese blend.' },
-              { name: 'Bhakhri Pizza', description: 'Traditional crispy base with Amul Cheese.' },
-              { name: 'Italian Fusion', description: 'Classic Pasta (Red or White Sauce), Garden Lasagna.' }
+              { name: 'Bhakhri Topping Pizza', description: '6 Inch.', price: '$12' },
+              { name: 'Classic Pasta', description: 'Red or White sauce.', price: '$15' },
+              { name: 'Garden Lasagna', description: 'Layered veggie goodness.', price: '$17' },
+              { name: 'Amul Cheese Pizza', description: '8 Inch.', price: '$20' },
+              { name: 'Mozzarella Cheese Pizza', description: '16 Inch.', price: '$20' },
+              { name: 'Fully Loaded Pizza', description: '16 Inch signature pizza.', price: '$25', badge: 'Chef Special' }
             ]
           },
           {
             id: 'bakery',
             number: '10',
             title: 'Bakery & Sweets',
+            subtitle: 'Make Bakery Items Vegan (+$5)',
             accent: 'blue',
             items: [
-              { name: 'Cakes', description: 'Chocolate, Vanilla, OREO, Fruit. Options: Vegan, Eggless (Dairy), or with Egg.', isPopular: true },
-              { name: 'Cookies & Muffins', description: 'Vanilla, Chocolate. Available in Vegan or Vegetarian options.', badge: 'Custom' },
-              { name: 'Traditional Sweets', description: 'Motichoor Ladoo, Halva, Brownie, Nan Khatai.' }
+              { name: 'Brownie', description: 'Rich chocolate.', price: '$5' },
+              { name: 'Muffins', description: '6 pieces.', price: '$7' },
+              { name: 'Nan-Khatai', description: '4 pieces.', price: '$10' },
+              { name: 'Cookies', description: '5 pieces.', price: '$10' },
+              { name: 'Motichoor Ladoo', description: '10 pieces.', price: '$18' },
+              { name: 'Cake (Single Layer)', description: '8 Inch.', price: '$20' },
+              { name: 'Halva', description: '16oz (Carrot, Moong, Shiro).', price: '$20' },
+              { name: 'Cake (Double Layer)', description: '8 Inch.', price: '$40' }
             ]
           },
           {
             id: 'beverages',
             number: '11',
             title: 'Beverages',
+            subtitle: '8oz Glass. Make Shakes/Lassi Vegan (+$2)',
             accent: 'gold',
             items: [
-              { name: 'Shakes', description: 'OREO, Chocolate, Sitaphal, Chicoo, Mango, Banana, Strawberry.', isPopular: true },
-              { name: 'Traditional Drinks', description: 'Lassi (Plain, Mango, Rose), Chaash (Plain, Masala).' },
-              { name: 'Hot Brews', description: 'Tea, Coffee.' }
+              { name: 'Tea / Coffee', description: 'Hot brew.', price: '$5' },
+              { name: 'Chaash', description: 'Buttermilk (Plain or Masala).', price: '$5' },
+              { name: 'Oreo Shake', description: 'Creamy oreo.', price: '$6' },
+              { name: 'Chocolate Shake', description: 'Rich chocolate.', price: '$6' },
+              { name: 'Banana Shake', description: 'Fresh banana.', price: '$8' },
+              { name: 'Strawberry Shake', description: 'Berry bliss.', price: '$10' },
+              { name: 'Mango Shake', description: 'Tropical delight.', price: '$10' },
+              { name: 'Plain Lassi', description: 'Yogurt drink.', price: '$10' },
+              { name: 'Mango Lassi', description: 'Mango yogurt drink.', price: '$12' },
+              { name: 'Rose Lassi', description: 'Floral yogurt drink.', price: '$12' },
+              { name: 'Sitaphal Shake', description: 'Custard apple.', price: '$12' },
+              { name: 'Chikoo Shake', description: 'Sapodilla.', price: '$12' }
             ]
           },
           {
             id: 'dry-nashta',
             number: '12',
             title: 'Dry Nashta (Made to Order)',
+            subtitle: 'Sold by 16oz',
             accent: 'blue',
             items: [
-              { name: 'Mamra', description: 'Lightly spiced puffed rice snack.' },
-              { name: 'Dry Snacks', description: 'Thin Poha Chivda, Masala Peanuts, Farsi Puri.' },
-              { name: 'Sakkar Para', description: 'Available in Tikha (Spicy) or Meetha (Sweet).', badge: 'Traditional' }
+              { name: 'Mamra', description: 'Puffed rice.', price: '$5' },
+              { name: 'Thin Poha Chivda', description: 'Flattened rice mix.', price: '$7' },
+              { name: 'Farsi Puri', description: 'Crispy crackers.', price: '$7' },
+              { name: 'Sakkar Para', description: 'Tikha (Spicy) or Sweet.', price: '$7' },
+              { name: 'Masala Peanuts', description: 'Spiced nuts.', price: '$10' }
             ]
           }
         ];
@@ -231,8 +313,8 @@
         const Navbar = ({ scrolled }) => {
           const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           const links = [
-            { name: 'Menu', href: '#menu' },
             { name: 'Philosophy', href: '#philosophy' },
+            { name: 'Menu', href: '#menu' },
             { name: 'Contact', href: '#contact' },
           ];
 
@@ -369,7 +451,7 @@
         };
 
         const MenuCard = ({ item, accentColor }) => (
-          <div className="group relative p-6 bg-white/[0.02] border border-white/5 rounded-2xl hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300">
+          <div className="group relative p-6 bg-white/[0.02] border border-white/5 rounded-2xl hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 flex flex-col h-full">
             <div className="flex justify-between items-start mb-3">
               <h4 className="text-xl font-black text-white group-hover:text-brandGold transition-colors tracking-tight">
                 {item.name}
@@ -380,15 +462,20 @@
                 </span>
               )}
             </div>
-            <p className="text-slate-400 font-light text-sm leading-relaxed">
+            <p className="text-slate-400 font-light text-sm leading-relaxed flex-grow">
               {item.description}
             </p>
-            {item.isPopular && (
-              <div className="mt-4 flex items-center gap-2 text-[10px] font-black text-brandGold/60 uppercase tracking-widest">
-                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-                Popular Choice
-              </div>
-            )}
+            <div className="mt-6 pt-4 border-t border-white/5 flex justify-between items-center">
+                {item.isPopular ? (
+                  <div className="flex items-center gap-2 text-[10px] font-black text-brandGold/60 uppercase tracking-widest">
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                    Popular Choice
+                  </div>
+                ) : <span></span>}
+                <span className={`text-sm font-bold tracking-wide ${accentColor === 'gold' ? 'text-brandGold' : 'text-brandBlue'}`}>
+                    {item.price}
+                </span>
+            </div>
           </div>
         );
 
@@ -409,20 +496,43 @@
                     Customized to perfection. <span className="text-brandGold font-bold">Vegan, Gluten-Free, Jain & Swaminarayan</span> modifications available upon request.
                   </p>
                 </header>
+
+                <div className="mb-24 p-12 bg-white/5 border border-white/10 rounded-[3rem] text-center max-w-4xl mx-auto space-y-6">
+                  <h4 className="text-2xl font-black text-brandGold uppercase tracking-widest">Dietary Standards</h4>
+                  <div className="space-y-4">
+                    <p className="text-slate-400 font-light leading-relaxed italic">
+                      "We adhere to strict ingredient quality. All food items are prepared in <span className="text-brandBlue font-semibold">RO water</span>. We strictly use <span className="text-brandGold font-semibold">Cold Pressed Peanut Oil</span> or <span className="text-brandGold font-semibold">Cold Pressed Coconut Oil</span>."
+                    </p>
+                    <p className="text-slate-400 font-light leading-relaxed italic">
+                      Ask us about our Jain and Swaminarayan special preparations.
+                    </p>
+                  </div>
+                  <div className="flex justify-center gap-8 pt-4 flex-wrap">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">Jain & Swaminarayan Options</span>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">Vegan & Gluten Free</span>
+                  </div>
+                </div>
                 
                 <div className="grid lg:grid-cols-2 gap-x-20 gap-y-32">
                   {MENU_DATA.map((section) => (
                     <div key={section.id} className="space-y-12">
-                      <header className="flex items-center gap-6 border-b border-white/10 pb-8">
-                        <span className={`text-6xl font-black opacity-20 italic font-serif ${section.accent === 'gold' ? 'text-brandGold' : 'text-brandBlue'}`}>
-                          {section.number}
-                        </span>
-                        <div>
-                          <h3 className={`text-3xl font-black uppercase tracking-widest ${section.accent === 'gold' ? 'text-brandGold' : 'text-brandBlue'}`}>
-                            {section.title}
-                          </h3>
-                          <div className={`h-1 w-12 mt-2 ${section.accent === 'gold' ? 'bg-brandGold' : 'bg-brandBlue'}`}></div>
+                      <header className="flex flex-col gap-2 border-b border-white/10 pb-8">
+                        <div className="flex items-center gap-6">
+                          <span className={`text-6xl font-black opacity-20 italic font-serif ${section.accent === 'gold' ? 'text-brandGold' : 'text-brandBlue'}`}>
+                            {section.number}
+                          </span>
+                          <div>
+                            <h3 className={`text-3xl font-black uppercase tracking-widest ${section.accent === 'gold' ? 'text-brandGold' : 'text-brandBlue'}`}>
+                              {section.title}
+                            </h3>
+                            <div className={`h-1 w-12 mt-2 ${section.accent === 'gold' ? 'bg-brandGold' : 'bg-brandBlue'}`}></div>
+                          </div>
                         </div>
+                        {section.subtitle && (
+                          <div className="pl-[5.5rem] mt-2">
+                             <span className="text-xs font-bold uppercase tracking-widest text-slate-500 bg-white/5 px-3 py-1 rounded-full border border-white/5">{section.subtitle}</span>
+                          </div>
+                        )}
                       </header>
                       
                       <div className="grid sm:grid-cols-2 gap-6">
@@ -432,17 +542,6 @@
                       </div>
                     </div>
                   ))}
-                </div>
-
-                <div className="mt-32 p-12 bg-white/5 border border-white/10 rounded-[3rem] text-center max-w-4xl mx-auto space-y-6">
-                  <h4 className="text-2xl font-black text-brandGold uppercase tracking-widest">Dietary Standards</h4>
-                  <p className="text-slate-400 font-light leading-relaxed italic">
-                    "We adhere to strict ingredient quality. Ask us about our Jain and Swaminarayan special preparations."
-                  </p>
-                  <div className="flex justify-center gap-8 pt-4 flex-wrap">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">Jain & Swaminarayan Options</span>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">Vegan & Gluten Free</span>
-                  </div>
                 </div>
               </div>
             </section>
@@ -475,7 +574,7 @@
                       </p>
                       <p className="p-6 bg-white/5 border border-white/10 rounded-2xl italic">
                         <span className="text-brandGold font-bold not-italic block text-sm uppercase tracking-widest mb-2">Conscious Cooking</span>
-                        We offer a choice of premium oils for all dishes: <span className="text-white font-semibold">Peanut, Avocado, Coconut, or Ghee</span>. Your meal is prepared exactly how you want it.
+                        All food items are prepared in <span className="text-white font-semibold">RO water</span>. We strictly use <span className="text-white font-semibold">Cold Pressed Peanut Oil</span> or <span className="text-white font-semibold">Cold Pressed Coconut Oil</span>.
                       </p>
                     </div>
                     
@@ -687,8 +786,8 @@
               
               <main>
                 <Hero />
-                <Menu />
                 <Philosophy />
+                <Menu />
                 <Contact />
               </main>
 
