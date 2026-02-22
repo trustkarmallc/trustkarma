@@ -238,7 +238,6 @@
         const Navbar = ({ scrolled }) => {
           const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           const links = [
-            { name: 'Philosophy', href: '#philosophy' },
             { name: 'Menu', href: '#menu' },
             { name: 'Contact', href: '#contact' },
           ];
@@ -439,44 +438,7 @@
           );
         };
 
-        const Philosophy = () => {
-          return (
-            <section id="philosophy" className="py-20 md:py-32 bg-brandSlate text-white relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-1/3 h-full bg-brandGold/5 -skew-x-12 translate-x-1/2"></div>
-              
-              <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <div className="max-w-4xl mx-auto text-center space-y-12">
-                   <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-2xl md:rounded-3xl bg-brandGold/10 border border-brandGold/30 text-brandGold animate-pulse mx-auto">
-                       <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 21l-8.228-6.171a2 2 0 01-.772-1.6V5a2 2 0 012-2h14a2 2 0 012 2v8.229a2 2 0 01-.771 1.601L12 21z" />
-                       </svg>
-                    </div>
-                    <h2 className="text-5xl md:text-8xl font-black leading-tight tracking-tighter">
-                      BEYOND THE <br/>
-                      <span className="text-gradient">EXCHANGE.</span>
-                    </h2>
-                    <div className="space-y-6 md:space-y-8 text-slate-400 text-lg md:text-xl font-light leading-relaxed">
-                      <p>
-                        At <span className="text-white font-black border-b-2 border-brandGold pb-1 uppercase">TRUST KARMA</span>, we believe food is the ultimate energy exchange. Every dish is a conscious choice, prepared with the intent to nourish and uplift. Our kitchen bridges the gap between vibrant Mumbai street food and high-end global fusion, prioritizing purity for your well-being.
-                      </p>
-                    </div>
-                    
-                    <div className="flex justify-center gap-8 md:gap-16 items-center pt-8 border-t border-white/5">
-                       <div className="text-center">
-                         <div className="text-4xl md:text-5xl font-black text-brandGold mb-2">0%</div>
-                         <div className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-slate-500">Compromise</div>
-                       </div>
-                       <div className="w-[1px] h-16 bg-white/10"></div>
-                       <div className="text-center">
-                         <div className="text-4xl md:text-5xl font-black text-brandBlue mb-2">100%</div>
-                         <div className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-slate-500">Conscious</div>
-                       </div>
-                    </div>
-                </div>
-              </div>
-            </section>
-          );
-        };
+        // Philosophy section removed per request
 
         const Contact = () => {
           return (
@@ -599,7 +561,7 @@
                   </div>
 
                   <div className="flex gap-8 md:gap-10">
-                    {['Menu', 'Philosophy', 'Contact'].map(item => (
+                    {['Menu', 'Contact'].map(item => (
                       <a 
                         key={item} 
                         href={`#${item.toLowerCase()}`} 
@@ -639,8 +601,8 @@
               
               <main>
                 <Hero />
-                <Philosophy />
                 <Menu />
+                
                 <Contact />
               </main>
 
