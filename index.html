@@ -258,26 +258,7 @@
                   </div>
                 </a>
 
-                <ul className="hidden md:flex space-x-8 items-center">
-                  {links.map((link) => (
-                    <li key={link.name}>
-                      <a 
-                        href={link.href}
-                        className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-brandGold transition-colors"
-                      >
-                        {link.name}
-                      </a>
-                    </li>
-                  ))}
-                  <li>
-                    <a 
-                      href="sms:+15127104997" 
-                      className="bg-gradient-to-r from-brandGold to-brandBlue hover:opacity-90 text-brandSlate font-black py-2.5 px-6 rounded-full transition-all shadow-lg hover:shadow-brandGold/20 active:scale-95 text-[10px] tracking-widest uppercase inline-block"
-                    >
-                      Order Now
-                    </a>
-                  </li>
-                </ul>
+                
 
                 <button 
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
