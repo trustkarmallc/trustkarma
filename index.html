@@ -1,93 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRUST KARMA | Bold Indian Street Food & Global Fusion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
-    
-    <!-- React & Babel -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Outfit', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    },
-                    colors: {
-                        brandGold: '#D4AF37',
-                        brandBlue: '#008080',
-                        brandDeep: '#0f172a',
-                        brandSlate: '#020617'
-                    },
-                    animation: {
-                      'fade-in': 'fadeIn 1s ease-out forwards',
-                      'slide-up': 'slideUp 0.8s ease-out forwards',
-                      'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                      fadeIn: {
-                        '0%': { opacity: '0' },
-                        '100%': { opacity: '1' },
-                      },
-                      slideUp: {
-                        '0%': { opacity: '0', transform: 'translateY(20px)' },
-                        '100%': { opacity: '1', transform: 'translateY(0)' },
-                      },
-                      float: {
-                        '0%, 100%': { transform: 'translateY(0)' },
-                        '50%': { transform: 'translateY(-20px)' },
-                      }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-      .text-gradient {
-          background: linear-gradient(135deg, #D4AF37 0%, #008080 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-      }
-      .glass-nav {
-          background: rgba(2, 6, 23, 0.85);
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      }
-      .menu-grid-line {
-          background-image: radial-gradient(circle, #334155 1px, transparent 1px);
-          background-size: 30px 30px;
-      }
-      .custom-scrollbar::-webkit-scrollbar {
-          width: 8px;
-      }
-      .custom-scrollbar::-webkit-scrollbar-track {
-          background: #020617;
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #334155;
-          border-radius: 10px;
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: #D4AF37;
-      }
-    </style>
-</head>
-<body class="bg-brandSlate text-slate-200 font-sans selection:bg-brandGold selection:text-brandSlate custom-scrollbar">
-    <div id="root"></div>
-
-    <script type="text/babel">
-        const { useState, useEffect } = React;
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRUST KARMA | Bold Indian Street Food & Global Fusion</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet"><link rel="preload" href="https://fonts.gstatic.com/s/outfit/v6/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1O4iX.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.woff2" as="font" type="font/woff2" crossorigin><script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script><script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script><script src="https://unpkg.com/@babel/standalone/babel.min.js"></script><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={theme:{extend:{fontFamily:{sans:["Outfit","sans-serif"],serif:["Playfair Display","serif"]},colors:{brandGold:"#D4AF37",brandBlue:"#008080",brandDeep:"#0f172a",brandSlate:"#020617"},animation:{"fade-in":"fadeIn 1s ease-out forwards","slide-up":"slideUp 0.8s ease-out forwards",float:"float 6s ease-in-out infinite"},keyframes:{fadeIn:{"0%":{opacity:"0"},"100%":{opacity:"1"}},slideUp:{"0%":{opacity:"0",transform:"translateY(20px)"},"100%":{opacity:"1",transform:"translateY(0)"}},float:{"0%, 100%":{transform:"translateY(0)"},"50%":{transform:"translateY(-20px)"}}}}}}</script><style>.text-gradient{background:linear-gradient(135deg,#d4af37 0,teal 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.glass-nav{background:rgba(2,6,23,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.05)}.menu-grid-line{background-image:radial-gradient(circle,#334155 1px,transparent 1px);background-size:30px 30px}.custom-scrollbar::-webkit-scrollbar{width:8px}.custom-scrollbar::-webkit-scrollbar-track{background:#020617}.custom-scrollbar::-webkit-scrollbar-thumb{background:#334155;border-radius:10px}.custom-scrollbar::-webkit-scrollbar-thumb:hover{background:#d4af37}</style></head><body class="bg-brandSlate text-slate-200 font-sans selection:bg-brandGold selection:text-brandSlate custom-scrollbar"><div id="root"></div><script type="text/babel">const { useState, useEffect } = React;
 
         // --- CONSTANTS ---
         const MENU_DATA = [
@@ -326,6 +237,7 @@
                     src="https://raw.githubusercontent.com/trustkarmallc/trustkarma/main/logo.jpeg" 
                     alt="Trust Karma Logo" 
                     className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover transform group-hover:rotate-12 transition-transform duration-500 shadow-lg border border-white/20"
+                    loading="lazy"
                   />
                   <div className="flex flex-col">
                     <span className="text-lg md:text-xl font-black tracking-widest text-white uppercase leading-none">TRUST KARMA LLC</span>
@@ -397,10 +309,10 @@
           return (
             <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-brandSlate">
               <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596797038558-311b5ffefc5f?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596797038558-311b5ffefc5f?auto=format&fit=crop&q=80&w=1200&h=800')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-brandSlate via-brandSlate/80 to-transparent"></div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] bg-brandGold/5 rounded-full blur-[100px] md:blur-[120px] animate-pulse"></div>
-                <div className="absolute top-1/4 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-brandBlue/10 rounded-full blur-[80px] md:blur-[100px] animate-float"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] bg-brandGold/5 rounded-full blur-[50px] md:blur-[60px] animate-pulse"></div>
+                <div className="absolute top-1/4 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-brandBlue/10 rounded-full blur-[40px] md:blur-[50px] animate-float"></div>
               </div>
 
               <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -450,7 +362,7 @@
           );
         };
 
-        const MenuCard = ({ item, accentColor }) => (
+        const MenuCard = React.memo(({ item, accentColor }) => (
           <div className="group relative p-6 bg-white/[0.02] border border-white/5 rounded-2xl hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 flex flex-col h-full">
             <div className="flex justify-between items-start mb-3">
               <h4 className="text-lg md:text-xl font-black text-white group-hover:text-brandGold transition-colors tracking-tight">
@@ -477,7 +389,7 @@
                 </span>
             </div>
           </div>
-        );
+        ));
 
         const Menu = () => {
           return (
@@ -691,6 +603,7 @@
                         src="https://raw.githubusercontent.com/trustkarmallc/trustkarma/main/logo.jpeg" 
                         alt="Logo" 
                         className="h-10 w-10 rounded-full grayscale opacity-50" 
+                        loading="lazy"
                       />
                       <span className="text-xl font-black tracking-widest text-white uppercase">TRUST KARMA</span>
                     </div>
