@@ -198,7 +198,7 @@
           },
           {
             id: 'beverages',
-            number: '12',
+            number: '11',
             title: 'Beverages',
             subtitle: '8oz Glass. Make Shakes/Lassi Vegan (+$2)',
             accent: 'blue',
@@ -219,7 +219,7 @@
           },
           {
             id: 'dry-nashta',
-            number: '13',
+            number: '12',
             title: 'Dry Nashta (Made to Order)',
             subtitle: 'Sold by 16oz',
             accent: 'gold',
@@ -352,6 +352,13 @@
 
                   <div className="flex flex-col sm:flex-row gap-4 md:gap-6 pt-6 md:pt-10 justify-center items-center animate-fade-in opacity-0" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
                     <a 
+                      href="sms:+15127104997" 
+                      className="group relative w-full sm:w-auto px-10 py-4 md:px-14 md:py-6 bg-brandGold text-brandSlate font-black rounded-full text-base md:text-lg shadow-2xl hover:scale-105 transition-all overflow-hidden"
+                    >
+                      <span className="relative z-10 uppercase tracking-widest">Order Now</span>
+                      <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                    </a>
+                    <a 
                       href="#menu" 
                       className="w-full sm:w-auto px-10 py-4 md:px-14 md:py-6 border-2 border-white/10 hover:border-brandGold text-white font-black rounded-full text-base md:text-lg transition-all backdrop-blur-sm group hover:bg-white/5 uppercase tracking-widest"
                     >
@@ -419,7 +426,7 @@
                 <div className="mb-12 md:mb-24 p-6 md:p-12 bg-white/5 border border-white/10 rounded-[2rem] md:rounded-[3rem] text-center max-w-4xl mx-auto">
                   <h4 className="text-xl md:text-2xl font-black text-brandGold uppercase tracking-widest mb-6">Dietary Standards</h4>
                   <p className="text-slate-400 font-light leading-relaxed italic text-sm md:text-base">
-                    "We adhere to strict ingredient quality. All food items are prepared in <span className="text-brandBlue font-semibold">RO water</span>. We strictly use <span className="text-brandGold font-semibold">Cold Pressed Avocado Oil</span>, <span className="text-brandGold font-semibold">Cold Pressed Peanut Oil</span>, or <span className="text-brandGold font-semibold">Cold Pressed Coconut Oil</span>."
+                    "We adhere to strict ingredient quality. All food items are prepared in <span className="text-brandBlue font-semibold">RO water</span>. We strictly use <span className="text-brandGold font-semibold">Cold Pressed Peanut Oil</span> or <span className="text-brandGold font-semibold">Cold Pressed Coconut Oil</span>."
                   </p>
                 </div>
                 
@@ -470,7 +477,10 @@
                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 21l-8.228-6.171a2 2 0 01-.772-1.6V5a2 2 0 012-2h14a2 2 0 012 2v8.229a2 2 0 01-.771 1.601L12 21z" />
                        </svg>
                     </div>
-                    <!-- BEYOND THE EXCHANGE heading removed per request -->
+                    <h2 className="text-5xl md:text-8xl font-black leading-tight tracking-tighter">
+                      BEYOND THE <br/>
+                      <span className="text-gradient">EXCHANGE.</span>
+                    </h2>
                     <div className="space-y-6 md:space-y-8 text-slate-400 text-lg md:text-xl font-light leading-relaxed">
                       <p>
                         At <span className="text-white font-black border-b-2 border-brandGold pb-1 uppercase">TRUST KARMA</span>, we believe food is the ultimate energy exchange. Every dish is a conscious choice, prepared with the intent to nourish and uplift. Our kitchen bridges the gap between vibrant Mumbai street food and high-end global fusion, prioritizing purity for your well-being.
@@ -509,7 +519,10 @@
                     <div className="space-y-12">
                       <div className="space-y-6">
                         <div className="inline-block text-brandGold text-[9px] md:text-[10px] font-black uppercase tracking-[0.5em] mb-2">Contact Us</div>
-                        <!-- JOIN THE CYCLE heading removed per request -->
+                        <h2 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-none">
+                          JOIN THE <br/>
+                          <span className="text-gradient italic font-serif">CYCLE.</span>
+                        </h2>
                         <p className="text-slate-400 text-lg md:text-xl font-light">We are one text away from your next culinary sanctuary.</p>
                       </div>
 
@@ -558,7 +571,15 @@
                         </p>
 
                         <div className="space-y-4 text-left">
-                            <!-- Ordering Policy block removed per request -->
+                          <div className="bg-white/5 border border-white/5 p-6 rounded-2xl relative overflow-hidden group">
+                              <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
+                                 <svg className="w-12 h-12 text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                              </div>
+                              <p className="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-brandGold mb-2">Ordering Policy</p>
+                              <p className="text-xs md:text-sm font-light text-slate-300">
+                                  We <span className="text-white font-medium">shop local for fresh ingredients</span> and prepare everything <span className="text-white font-medium">from scratch</span>. Thus, a <span className="font-bold text-white">mandatory 24-hour notice</span> is required for <span className="text-white font-bold">all orders</span>.
+                              </p>
+                          </div>
                           
                           <div className="bg-brandBlue/10 border border-brandBlue/10 p-6 rounded-2xl">
                               <p className="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-brandBlue mb-2">Services & Catering</p>
