@@ -668,7 +668,7 @@
             const formattedPickupTime = `${formattedDate} at ${formattedTime}`;
             const message = `I would like to order the following items:\nName: ${customerName}\n${cartItems.map(item => `${item.name} x ${item.quantity}`).join('\n')}\nTotal: $${total.toFixed(2)}\nPickup Time: ${formattedPickupTime}`;
             const encodedMessage = encodeURIComponent(message);
-            window.open(`sms:+15127104997&body=${encodedMessage}`);
+            window.open(`sms:+15127104997?body=${encodedMessage}`);
           };
 
           return (
