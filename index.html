@@ -9,26 +9,27 @@
             accent: 'gold',
             orderingPolicy: 'Morning/Evening Order - Evening/Morning Collection',
             items: [
-              { name: 'Classic Roti', description: 'Wheat or All-Purpose Flour.', price: '$1 / pc (Min. Order 2)' },
-              { name: 'Specialty Roti', description: 'Ragi, Jovar, Rice Flour, Bajri.', price: '3 for $5' },
+              { name: 'Classic Roti', description: 'Wheat or All-Purpose Flour. (Min. Order 2)', price: '$2' },
+              { name: 'Specialty Roti', description: 'Ragi, Jovar, Rice Flour, Bajri. (3 pcs)', price: '$5' },
               
               // Thepla Varieties
-              { name: 'Masala Thepla', description: 'Classic spiced flatbread.', price: '3 for $10', badge: 'House Special' },
-              { name: 'Spinach Thepla', description: 'Infused with fresh spinach.', price: '3 for $11' },
-              { name: 'Methi Thepla', description: 'Fenugreek leaves (Methi).', price: '3 for $12' },
-              { name: 'Cilantro Thepla', description: 'Fresh coriander (Kothmi).', price: '3 for $11' },
-              { name: 'Onion Thepla', description: 'Spiced onion mix.', price: '3 for $11' },
+              { name: 'Masala Thepla', description: 'Classic spiced flatbread. (3 pcs)', price: '$10' },
+              { name: 'Spinach Thepla', description: 'Infused with fresh spinach. (3 pcs)', price: '$11' },
+              { name: 'Methi Thepla', description: 'Fenugreek leaves (Methi). (3 pcs)', price: '$12' },
+              { name: 'Cilantro Thepla', description: 'Fresh coriander (Kothmi). (3 pcs)', price: '$11' },
+              { name: 'Onion Thepla', description: 'Spiced onion mix. (3 pcs)', price: '$11' },
 
               // Paratha Varieties
-              { name: 'Simple Paratha', description: 'Traditional plain paratha.', price: '3 for $10' },
-              { name: 'Lachha Paratha', description: 'Flaky layered flatbread.', price: '3 for $12' },
-              { name: 'Aloo Paratha', description: 'Stuffed with spiced potato.', price: '3 for $12', isPopular: true },
-              { name: 'Paneer Paratha', description: 'Stuffed with cottage cheese.', price: '3 for $14' },
+              { name: 'Simple Paratha', description: 'Traditional plain paratha. (3 pcs)', price: '$10' },
+              { name: 'Lachha Paratha', description: 'Flaky layered flatbread. (3 pcs)', price: '$12' },
+              { name: 'Aloo Paratha', description: 'Stuffed with spiced potato. (3 pcs)', price: '$12' },
+              { name: 'Paneer Paratha', description: 'Stuffed with cottage cheese. (3 pcs)', price: '$14' },
 
               // Sides
-              { name: 'Puri', description: 'Deep-fried puffed bread.', price: '4 for $2 (Small) / 2 for $2 (Big)' },
-              { name: 'Bhakhri', description: 'Crispy whole wheat bread.', price: '3 for $10' },
-              { name: 'Extra Pav', description: 'Buttered bread roll.', price: '$1 / pc' }
+              { name: 'Puri (Small)', description: 'Deep-fried puffed bread. (4 pcs)', price: '$2' },
+              { name: 'Puri (Big)', description: 'Deep-fried puffed bread. (2 pcs)', price: '$2' },
+              { name: 'Bhakhri', description: 'Crispy whole wheat bread. (3 pcs)', price: '$10' },
+              { name: 'Extra Pav', description: 'Buttered bread roll. (1 pc)', price: '$1' }
             ]
           },
           {
@@ -41,7 +42,7 @@
             items: [
               { name: 'Sev Tomato', description: 'Tangy tomato curry topped with crispy noodles.', price: '$12' },
               { name: 'Dungli Bataka', description: 'Onion Potato curry.', price: '$12' },
-              { name: 'Rasa Vada Bataka', description: 'Potato in Gujarati Gravy.', price: '$12', badge: 'New' },
+              { name: 'Rasa Vada Bataka', description: 'Potato in Gujarati Gravy.', price: '$12' },
               { name: 'Sukhi Bhaji', description: 'Dry Spiced Potato.', price: '$12' },
               { name: 'Aloo Matar', description: 'Potato and peas curry.', price: '$12' },
               { name: 'Papdi', description: 'Flat bean curry.', price: '$15' },
@@ -49,7 +50,7 @@
               { name: 'Mix Veg', description: 'Seasonal mixed vegetables.', price: '$15' },
               { name: 'Gavar', description: 'Cluster beans.', price: '$15' },
               { name: 'Tindora', description: 'Ivy gourd.', price: '$15' },
-              { name: 'Palak Paneer', description: 'Spinach and cottage cheese.', price: '$16', isPopular: true },
+              { name: 'Palak Paneer', description: 'Spinach and cottage cheese.', price: '$16' },
               { name: 'Cheese Butter Masala', description: 'Rich creamy gravy with cheese.', price: '$16' },
               { name: 'Palak Tofu', description: 'Vegan spinach curry.', price: '$17' },
               { name: 'Karela', description: 'Bitter Gourd preparation.', price: '$17' },
@@ -66,7 +67,7 @@
             items: [
               { name: 'Toor Dal', description: 'Gujarati Style.', price: '$10' },
               { name: 'Urad Dal', description: 'Creamy split black gram.', price: '$10' },
-              { name: 'Mix Dal', description: 'Toor, Urad, Masoor, Chana, Moong.', price: '$12', isPopular: true }
+              { name: 'Mix Dal', description: 'Toor, Urad, Masoor, Chana, Moong.', price: '$12' }
             ]
           },
           {
@@ -90,7 +91,6 @@
             id: 'street-food',
             number: '05',
             title: 'Street Food & Burgers',
-            subtitle: 'Replace burger cheese with Vegan slice (+$2)',
             accent: 'gold',
             orderingPolicy: 'Morning/Evening Order - Evening/Morning Collection',
             items: [
@@ -99,14 +99,14 @@
               { name: 'Aloo Burger', description: 'Spiced potato patty burger.', price: '$10' },
               { name: 'Blackbean Burger', description: 'Hearty bean patty.', price: '$10' },
               { name: 'Only Bhaji', description: 'Spiced vegetable mash (No bread).', price: '$14' },
-              { name: 'Bhaji Pav', description: 'Comes with 2 counts of Pav.', price: '$16', isPopular: true }
+              { name: 'Bhaji Pav', description: 'Comes with 2 counts of Pav.', price: '$16' },
+              { name: 'Vegan Cheese Slice', description: 'Add to any burger.', price: '$2' }
             ]
           },
           {
             id: 'sandwiches',
             number: '06',
             title: 'Sandwiches',
-            subtitle: 'Vegan cheese +$2 | Amul Cheese +$2',
             accent: 'blue',
             orderingPolicy: 'Morning/Evening Order - Evening/Morning Collection',
             items: [
@@ -114,7 +114,9 @@
               { name: 'Grilled Cheese', description: 'Classic grilled cheese sandwich.', price: '$8' },
               { name: 'Green Chilli Cheese', description: 'Comes with spicy green chilli, cheese, green and red chutney.', price: '$9' },
               { name: 'Spicy Potato Corn Sandwich', description: 'Spicy potatoes, corn, capsicum, onion, cheese, green and red chutney.', price: '$11' },
-              { name: 'Vegetable Sandwich', description: 'Slices of potato, tomato, onion and dill chips.', price: '$11' }
+              { name: 'Vegetable Sandwich', description: 'Slices of potato, tomato, onion and dill chips.', price: '$11' },
+              { name: 'Vegan Cheese Slice', description: 'Add to any sandwich.', price: '$2' },
+              { name: 'Amul Cheese Slice', description: 'Add to any sandwich.', price: '$2' }
             ]
           },
           {
@@ -125,10 +127,10 @@
             orderingPolicy: 'Morning/Evening Order - Evening/Morning Collection',
             items: [
               { name: 'Fried Rice', description: 'Wok tossed veggies and rice.', price: '$10' },
-              { name: 'Dry Manchurian', description: '8 Balls.', price: '$12' },
-              { name: 'Gravy Manchurian', description: '8 Balls in sauce.', price: '$15' },
+              { name: 'Dry Manchurian', description: '(8 Balls)', price: '$12' },
+              { name: 'Gravy Manchurian', description: '(8 Balls in sauce)', price: '$15' },
               { name: 'Hakka Noodles', description: 'Stir fried noodles.', price: '$15' },
-              { name: 'Chilli Paneer', description: 'Spicy cottage cheese cubes.', price: '$20', badge: 'Spicy' }
+              { name: 'Chilli Paneer', description: 'Spicy cottage cheese cubes.', price: '$20' }
             ]
           },
           {
@@ -139,11 +141,11 @@
             accent: 'blue',
             orderingPolicy: '24 Hour Prior Order',
             items: [
-              { name: 'Plain Idli', description: '3 pieces. Comes with Chutnies.', price: '$10' },
-              { name: 'Sambhar Dipped Idli', description: '2 pieces.', price: '$10' },
+              { name: 'Plain Idli', description: '(3 pieces). Comes with Chutnies.', price: '$10' },
+              { name: 'Sambhar Dipped Idli', description: '(2 pieces).', price: '$10' },
               { name: 'Sambar', description: '16oz container.', price: '$10' },
               { name: 'Plain Dosa', description: 'Crispy rice crepe.', price: '$9' },
-              { name: 'Masala Dosa', description: 'Stuffed with spiced potato.', price: '$10', isPopular: true },
+              { name: 'Masala Dosa', description: 'Stuffed with spiced potato.', price: '$10' },
               { name: 'Mysore Masala', description: 'With spicy chutney spread.', price: '$10' },
               { name: 'Onion Masala', description: 'Stuffed with spiced onions.', price: '$10' }
             ]
@@ -158,11 +160,11 @@
             items: [
               { name: 'Khasta Kachori', description: 'Crispy flaky pastry.', price: '$5' },
               { name: 'French Fries', description: 'Classic salted fries.', price: '$8' },
-              { name: 'Pani Puri', description: '7 pieces.', price: '$8' },
+              { name: 'Pani Puri', description: '(7 pieces).', price: '$8' },
               { name: 'Bhel Puri', description: 'Puffed rice mix.', price: '$9' },
               { name: 'Basket Chat', description: 'Edible basket tart.', price: '$9' },
-              { name: 'Lilva Kachori', description: '8 pieces.', price: '$15' },
-              { name: 'Dhokla', description: 'Steamed savory cake.', price: '$15', badge: '24 Hour Prior Order' },
+              { name: 'Lilva Kachori', description: '(8 pieces).', price: '$15' },
+              { name: 'Dhokla', description: 'Steamed savory cake.', price: '$15' },
               { name: 'Khaman', description: 'Fluffy gram flour cake.', price: '$15' },
               { name: 'Muthiya', description: 'Steamed dumplings.', price: '$15' },
               { name: 'Khandvi', description: 'Gram flour rolls.', price: '$15' },
@@ -182,11 +184,12 @@
             orderingPolicy: 'Morning/Evening Order - Evening/Morning Collection',
             items: [
               { name: 'Bhakhri Topping Pizza', description: '6 Inch.', price: '$12' },
-              { name: 'Classic Pasta', description: 'Red or White sauce.', price: '$15' },
+              { name: 'Classic Pasta (Red Sauce)', description: 'Classic pasta in red sauce.', price: '$15' },
+              { name: 'Classic Pasta (White Sauce)', description: 'Classic pasta in white sauce.', price: '$15' },
               { name: 'Garden Lasagna', description: 'Layered veggie goodness.', price: '$17' },
               { name: 'Amul Cheese Pizza', description: '8 Inch.', price: '$20' },
               { name: 'Mozzarella Cheese Pizza', description: '16 Inch.', price: '$20' },
-              { name: 'Fully Loaded Pizza', description: '16 Inch signature pizza.', price: '$25', badge: 'Chef Special' }
+              { name: 'Fully Loaded Pizza', description: '16 Inch signature pizza.', price: '$25' }
             ]
           },
           {
@@ -198,10 +201,10 @@
             orderingPolicy: '24 Hour Prior Order',
             items: [
               { name: 'Brownie', description: 'Rich chocolate.', price: '$5' },
-              { name: 'Muffins', description: '6 pieces.', price: '$7' },
-              { name: 'Nan-Khatai', description: '4 pieces.', price: '$10' },
-              { name: 'Cookies', description: '5 pieces.', price: '$10' },
-              { name: 'Motichoor Ladoo', description: '10 pieces.', price: '$18' },
+              { name: 'Muffins', description: '(6 pieces).', price: '$7' },
+              { name: 'Nan-Khatai', description: '(4 pieces).', price: '$10' },
+              { name: 'Cookies', description: '(5 pieces).', price: '$10' },
+              { name: 'Motichoor Ladoo', description: '(10 pieces).', price: '$18' },
               { name: 'Cake (Single Layer)', description: '8 Inch.', price: '$20' },
               { name: 'Halva', description: '16oz (Carrot, Moong, Shiro).', price: '$20' },
               { name: 'Cake (Double Layer)', description: '8 Inch.', price: '$40' }
@@ -216,7 +219,8 @@
             orderingPolicy: 'Morning/Evening Order - Evening/Morning Collection',
             items: [
               { name: 'Tea / Coffee', description: 'Hot brew.', price: '$5' },
-              { name: 'Chaash', description: 'Buttermilk (Plain or Masala).', price: '$5' },
+              { name: 'Chaash (Plain)', description: 'Plain Buttermilk.', price: '$5' },
+              { name: 'Chaash (Masala)', description: 'Spiced Buttermilk.', price: '$5' },
               { name: 'Oreo Shake', description: 'Creamy oreo.', price: '$6' },
               { name: 'Chocolate Shake', description: 'Rich chocolate.', price: '$6' },
               { name: 'Banana Shake', description: 'Fresh banana.', price: '$8' },
@@ -240,7 +244,8 @@
               { name: 'Mamra', description: 'Puffed rice.', price: '$5' },
               { name: 'Thin Poha Chivda', description: 'Flattened rice mix.', price: '$7' },
               { name: 'Farsi Puri', description: 'Crispy crackers.', price: '$7' },
-              { name: 'Sakkar Para', description: 'Tikha (Spicy) or Sweet.', price: '$7' },
+              { name: 'Sakkar Para (Spicy)', description: 'Spicy diamond shaped crackers.', price: '$7' },
+              { name: 'Sakkar Para (Sweet)', description: 'Sweet diamond shaped crackers.', price: '$7' },
               { name: 'Masala Peanuts', description: 'Spiced nuts.', price: '$10' }
             ]
           },
@@ -251,10 +256,14 @@
             accent: 'blue',
             orderingPolicy: 'Morning/Evening Order - Evening/Morning Collection',
             items: [
-              { name: 'Green Cilantro Chutney', description: 'Fresh coriander chutney.', price: '2 oz $1.5 | 16 oz $10' },
-              { name: 'Red Garlic Chutney', description: 'Spicy garlic chutney.', price: '2 oz $2 | 16 oz $15' },
-              { name: 'Red Khatti Meethi Chutney', description: 'Sweet and sour chutney.', price: '2 oz $1.5 | 16 oz $10' },
-              { name: 'Dahi', description: 'Yogurt.', price: '2 oz $1.5 | 16 oz $7' }
+              { name: 'Green Cilantro Chutney (2 oz)', description: 'Fresh coriander chutney.', price: '$1.5' },
+              { name: 'Green Cilantro Chutney (16 oz)', description: 'Fresh coriander chutney.', price: '$10' },
+              { name: 'Red Garlic Chutney (2 oz)', description: 'Spicy garlic chutney.', price: '$2' },
+              { name: 'Red Garlic Chutney (16 oz)', description: 'Spicy garlic chutney.', price: '$15' },
+              { name: 'Red Khatti Meethi Chutney (2 oz)', description: 'Sweet and sour chutney.', price: '$1.5' },
+              { name: 'Red Khatti Meethi Chutney (16 oz)', description: 'Sweet and sour chutney.', price: '$10' },
+              { name: 'Dahi (2 oz)', description: 'Yogurt.', price: '$1.5' },
+              { name: 'Dahi (16 oz)', description: 'Yogurt.', price: '$7' }
             ]
           }
         ];
@@ -375,7 +384,7 @@
           );
         };
 
-        const MenuCard = React.memo(({ item, accentColor }) => (
+        const MenuCard = React.memo(({ item, accentColor, addToCart }) => (
           <div className="group relative p-6 bg-white/[0.02] border border-white/5 rounded-2xl hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 flex flex-col h-full">
             <div className="flex justify-between items-start mb-3">
               <h4 className="text-lg md:text-xl font-black text-white group-hover:text-brandGold transition-colors tracking-tight">
@@ -401,10 +410,13 @@
                     {item.price}
                 </span>
             </div>
+            <button onClick={() => addToCart(item)} className="mt-4 bg-brandGold text-brandSlate font-bold py-2 px-4 rounded">
+              Add to Cart
+            </button>
           </div>
         ));
 
-        const Menu = () => {
+        const Menu = ({ addToCart }) => {
           return (
             <section id="menu" className="py-20 md:py-32 bg-brandSlate relative overflow-hidden">
               <div className="absolute inset-0 menu-grid-line opacity-[0.03]"></div>
@@ -458,7 +470,7 @@
                       
                       <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
                         {section.items.map((item, idx) => (
-                          <MenuCard key={idx} item={item} accentColor={section.accent} />
+                          <MenuCard key={idx} item={item} accentColor={section.accent} addToCart={addToCart} />
                         ))}
                       </div>
                     </div>
@@ -550,6 +562,19 @@
           );
         };
 
+        const CartNotification = ({ message, show }) => {
+          return (
+            <div
+              className={`fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-all duration-300 ease-in-out ${
+                show ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+              }`}
+              style={{ pointerEvents: show ? 'auto' : 'none' }}
+            >
+              {message}
+            </div>
+          );
+        };
+
         const Footer = () => {
           const currentYear = new Date().getFullYear();
           
@@ -594,8 +619,187 @@
           );
         };
 
+        const Cart = ({ cartItems, isCartOpen, setIsCartOpen, removeFromCart, clearCart, addToCart }) => {
+          const [scrolled, setScrolled] = useState(false);
+          const [pickupTime, setPickupTime] = useState('');
+          const [customerName, setCustomerName] = useState('');
+
+          useEffect(() => {
+            const handleScroll = () => {
+              setScrolled(window.scrollY > 50);
+            };
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+          }, []);
+
+          const getMinPickupTime = () => {
+            const now = new Date();
+            now.setHours(now.getHours() + 8);
+            return now.toISOString().slice(0, 16);
+          };
+
+          const getMaxPickupTime = () => {
+            const now = new Date();
+            now.setMonth(now.getMonth() + 1);
+            return now.toISOString().slice(0, 16);
+          };
+
+          const calculateTotal = () => {
+            return cartItems.reduce((total, item) => {
+              const priceString = item.price.replace(/[^0-9.-]+/g,"");
+              const price = parseFloat(priceString);
+              return total + price * item.quantity;
+            }, 0);
+          };
+
+          const sendOrder = () => {
+            if (!customerName) {
+                alert('Please enter your name.');
+                return;
+            }
+            if (!pickupTime) {
+                alert('Please select a pickup time.');
+                return;
+            }
+            const total = calculateTotal();
+            const date = new Date(pickupTime);
+            const formattedDate = date.toLocaleDateString(undefined, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
+            const formattedTime = date.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+            const formattedPickupTime = `${formattedDate} at ${formattedTime}`;
+            const message = `I would like to order the following items:\nName: ${customerName}\n${cartItems.map(item => `${item.name} x ${item.quantity}`).join('\n')}\nTotal: $${total.toFixed(2)}\nPickup Time: ${formattedPickupTime}`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`sms:+15127104997&body=${encodedMessage}`);
+          };
+
+          return (
+            <div className={`fixed inset-0 z-50 ${isCartOpen ? 'block' : 'hidden'}`}>
+              <div className="absolute inset-0 bg-black opacity-50" onClick={() => setIsCartOpen(false)}></div>
+              <div className="fixed inset-y-0 right-0 max-w-sm w-full bg-white shadow-lg p-6">
+                <div className="flex justify-between items-center mb-6">
+                  <h2 className="text-2xl font-bold">Your Cart</h2>
+                  <button onClick={() => setIsCartOpen(false)} className="text-gray-500 hover:text-gray-800">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                {cartItems.length === 0 ? (
+                  <p>Your cart is empty.</p>
+                ) : (
+                  <>
+                    <div className="space-y-4 max-h-64 overflow-y-auto custom-scrollbar">
+                      {cartItems.map(item => (
+                        <div key={item.name} className="flex justify-between items-center">
+                          <div>
+                            <h3 className="font-bold">{item.name}</h3>
+                            <p className="text-gray-500">{item.price}</p>
+                          </div>
+                          <div className="flex items-center">
+                            <button onClick={() => removeFromCart(item)} className="text-red-500 hover:text-red-700">-</button>
+                            <span className="mx-2">{item.quantity}</span>
+                            <button onClick={() => addToCart(item)} className="text-green-500 hover:text-green-700">+</button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="mt-6">
+                       <div className="mt-4">
+                          <label htmlFor="customer-name" className="block text-sm font-medium text-gray-700">Your Name</label>
+                          <input
+                              type="text"
+                              id="customer-name"
+                              name="customer-name"
+                              value={customerName}
+                              onChange={(e) => setCustomerName(e.target.value)}
+                              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black"
+                              placeholder="Enter your name"
+                          />
+                      </div>
+                       <div className="mt-4">
+                          <label htmlFor="pickup-time" className="block text-sm font-medium text-gray-700">Pickup Time</label>
+                          <input
+                              type="datetime-local"
+                              id="pickup-time"
+                              name="pickup-time"
+                              value={pickupTime}
+                              onChange={(e) => setPickupTime(e.target.value)}
+                              min={getMinPickupTime()}
+                              max={getMaxPickupTime()}
+                              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black"
+                          />
+                      </div>
+                      <div className="flex justify-between items-center mt-4">
+                        <p className="font-bold">Total:</p>
+                        <p className="font-bold">${calculateTotal().toFixed(2)}</p>
+                      </div>
+                      <button onClick={sendOrder} className="w-full bg-brandGold text-brandSlate font-bold py-2 px-4 rounded mt-4">
+                        Send Order
+                      </button>
+                      <button onClick={clearCart} className="w-full bg-red-500 text-white font-bold py-2 px-4 rounded mt-2">
+                        Clear Cart
+                      </button>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          );
+        };
+
+        const CartIcon = ({ cartItems, setIsCartOpen }) => {
+          return (
+            <div className="fixed bottom-8 left-8 z-50">
+              <button onClick={() => setIsCartOpen(true)} className="bg-brandGold text-brandSlate rounded-full p-4 shadow-lg">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                {cartItems.length > 0 && (
+                  <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                    {cartItems.reduce((total, item) => total + item.quantity, 0)}
+                  </span>
+                )}
+              </button>
+            </div>
+          );
+        };
+
         const App = () => {
           const [scrolled, setScrolled] = useState(false);
+          const [cartItems, setCartItems] = useState([]);
+          const [isCartOpen, setIsCartOpen] = useState(false);
+          const [showNotification, setShowNotification] = useState(false);
+          const [notificationMessage, setNotificationMessage] = useState('');
+
+          const addToCart = (item) => {
+            const existingItem = cartItems.find(cartItem => cartItem.name === item.name);
+            if (existingItem) {
+              setCartItems(cartItems.map(cartItem =>
+                cartItem.name === item.name ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+              ));
+            } else {
+              setCartItems([...cartItems, { ...item, quantity: 1 }]);
+            }
+            setNotificationMessage(`${item.name} added to cart!`);
+            setShowNotification(true);
+            setTimeout(() => {
+                setShowNotification(false);
+            }, 3000);
+          };
+
+          const removeFromCart = (item) => {
+            const existingItem = cartItems.find(cartItem => cartItem.name === item.name);
+            if (existingItem.quantity === 1) {
+              setCartItems(cartItems.filter(cartItem => cartItem.name !== item.name));
+            } else {
+              setCartItems(cartItems.map(cartItem =>
+                cartItem.name === item.name ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem
+              ));
+            }
+          };
+
+          const clearCart = () => {
+            setCartItems([]);
+          };
 
           useEffect(() => {
             const handleScroll = () => {
@@ -611,12 +815,16 @@
               
               <main>
                 <Hero />
-                <Menu />
+                <Menu addToCart={addToCart} />
                 
                 <Contact />
               </main>
 
               <Footer />
+              <CartIcon cartItems={cartItems} setIsCartOpen={setIsCartOpen} />
+              <Cart cartItems={cartItems} isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen} removeFromCart={removeFromCart} clearCart={clearCart} addToCart={addToCart} />
+
+              <CartNotification message={notificationMessage} show={showNotification} />
 
               <button 
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
